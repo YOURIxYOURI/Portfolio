@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em;
+}
+
+.nav ul li a {
+  margin-top: 12px;
+  color: #1D1D1D;
+  text-decoration: none;
+}
+
+.nav ul li h1 {
+  color: #1D1D1D;
+  font-size: 35px;
+}
+
+#hero {
+  text-align: center;
+  margin: 10em auto;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#hero h1 {
+  font-size: 65px;
+  margin: 1%;
+}
+
+#hero h3 {
+  font-size: 40px;
+}
+
+#hero button {
+  border: 0;
+  text-decoration: none;
+  border: 1px solid #1D1D1D;
+  background-color: #FFFFFF;
+  color: #1D1D1D;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10em;
+  margin-top: 5em;
+  cursor: pointer;
+}
+
+#hero .primary-btn:hover {
+  border: 1px solid #B042FF;
+  background-color: #B042FF;
+  color: #FFFFFF;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+#hero .secondary-btn:hover {
+  border: 1px solid #B042FF;
+  background-color: #FFFFFF;
+  color: #C175FF;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#abt-me {
+  background-color: #1D1D1D;
+  width: 100%;
+  padding: 5em;
+}
+
+#abt-me h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: center;
+  margin: 1em;
+}
+
+#abt-me h3 {
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+#abt-me p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+#services {
+  width: 100%;
+  padding: 2em;
+}
+
+#services h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 1em;
+}
+
+#services p {
+  font-size: 20px;
+}
+
+#portfolio {
+  width: 100%;
+  padding: 2em;
+  background-color: #C175FF;
+}
+
+#portfolio h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 1em;
+  color: #FFFFFF;
+}
+
+#portfolio p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+#portfolio .third-btn-div {
+  margin-right: 10em;
+  text-align: right;
+}
+
+#portfolio .third-btn-div button {
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+  background-color: #C175FF;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+#portfolio .third-btn:hover {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #B042FF;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#contact {
+  width: 100%;
+  padding: 2em;
+  background-color: #FFFFFF;
+}
+
+#contact h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 1em;
+  color: #1D1D1D;
+}
+
+#contact p {
+  color: #1D1D1D;
+  font-size: 20px;
+}
+
+#footer {
+  width: 100%;
+  padding: 2em;
+  background-color: #1D1D1D;
+}
+
+#footer h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 1em;
+  color: #FFFFFF;
+}
+
+#footer h5 {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#footer #socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #socials svg {
+  margin: 15px;
+  width: 35px;
+  height: 35px;
+  color: #FFFFFF;
+}
+
+#footer #socials svg:hover {
+  width: 40px;
+  height: 40px;
+  color: #CA8DFD;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+#footer p {
+  color: #FFFFFF;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

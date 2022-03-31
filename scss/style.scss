@@ -1,0 +1,261 @@
+@import './assets';
+@import './fonts';
+@import './animations';
+
+// MIXIN
+@mixin btn {
+    button {
+        border: 0;
+        text-decoration: none;
+        border: 1px solid $black;
+        background-color: $white;
+        color: $black;
+        font-size: 20px;
+        padding: 10px;
+        margin: $hg-mar;
+        margin-top: 5em;
+        cursor: pointer;
+    }
+}
+
+@mixin third-btn {
+    .third-btn-div {
+        margin-right: $hg-mar;
+        text-align: right;
+        button {
+            border: 1px solid $white;
+            text-decoration: none;
+            background-color: $secondary;
+            color: $white;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+        }
+    }
+}
+
+@mixin btn-prim-hov {
+    .primary-btn:hover {
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: $white;
+        transition-duration: 300ms;
+    }
+}
+
+@mixin btn-sec-hov {
+    .secondary-btn:hover {
+        border: 1px solid $primary;
+        background-color: $white;
+        color: $secondary;
+        transition: all 300ms;
+    }
+}
+
+@mixin btn-third-hov {
+    .third-btn:hover {
+        border: 1px solid $white;
+        background-color: $white;
+        color: $primary;
+        transition: all 300ms;
+    }
+}
+
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+// BODY
+body {
+    width: 100%;
+    background-color: $white;
+}
+
+// NAVBAR
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    // background-color: $white;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    ul {
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: $sm-pad;
+            a {
+                margin-top: 12px;
+                color: $black;
+                text-decoration: none;
+            }
+            h1 {
+                color: $black;
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+// .nav-invert {
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     // background-color: $white;
+//     backdrop-filter: blur(15px);
+//     text-align: center;
+//     animation-name: invertIn;
+//     animation-delay: 0s;
+//     animation-duration: 0.5s; 
+//     animation-timing-function: ease-out;
+//     animation-fill-mode:forwards;
+//     ul {
+//         li {
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-around;
+//             padding: $sm-pad;
+//             a {
+//                 color: $white;
+//                 text-decoration: none;
+//             }
+//             h1 {
+//                 color: $white;
+//                 font-size: 35px;
+//             }
+//         }
+//     }
+// }
+
+// HERO
+#hero {
+    text-align: center;
+    margin: $hg-mar auto;
+    transition: all 300ms;
+    h1 {     
+        font-size: 65px;
+        margin: 1%;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    @include btn();
+    @include btn-prim-hov();
+    @include btn-sec-hov();
+}
+
+// ABOUT-ME
+#abt-me {
+    background-color: $black;
+    width: 100%;
+    padding: $hg-pad;
+    h2 {
+        color: $white;
+        font-size: 40px;
+        text-align: center;
+        margin: $sm-mar;
+    }
+    h3 {
+        color: $white;
+        font-size: 35px;
+    }
+    p {
+        color: $white;
+        font-size: 20px;
+    }
+}
+
+// SERVICES
+#services {
+    width: 100%;
+    padding: $md-pad;
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: $sm-mar;
+    }
+    p {
+        font-size: 20px
+    }
+}
+
+// PORTFOLIO
+#portfolio {
+    width: 100%;
+    padding: $md-pad;
+    background-color: $secondary;
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: $sm-mar;
+        color: $white;
+    }
+    p {
+        color: $white;
+        font-size: 20px;
+    }
+    @include third-btn();
+    @include btn-third-hov();
+}
+
+// CONTACT
+#contact {
+    width: 100%;
+    padding: $md-pad;
+    background-color: $white;
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: $sm-mar;
+        color: $black;
+    }
+    p {
+        color: $black;
+        font-size: 20px;
+    }
+}
+
+// FOOTER
+#footer {
+    width: 100%;
+    padding: $md-pad;
+    background-color: $black;
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        margin: $sm-mar;
+        color: $white;
+    }
+    h5 {
+        font-size: 30px;
+        color: $white;
+        text-align: center;
+    }
+    #socials {
+        display: flex;
+        justify-content: center;
+        svg {
+            margin: 15px;
+            width: 35px;
+            height: 35px;
+            color: $white;
+        }
+        svg:hover {
+            width: 40px;
+            height: 40px;
+            color: $third;
+            transition: all 300ms;
+            cursor: pointer;
+        }
+    }
+    p {
+        color: $white;
+        text-align: center;
+    }
+}
